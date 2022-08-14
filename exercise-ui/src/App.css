@@ -1,0 +1,279 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+/* ...or hosted services like Google Fonts */
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+@import '../node_modules/modern-normalize/modern-normalize.css';
+              
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {                     
+  color: #1e3d59;
+  background-color: #f5f0e1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  border: 2px solid #373f27;
+  background-image: url("exercise.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: min-content;
+  margin-left: 150px; 
+  margin-right: 120px;
+}
+
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {  
+  text-align: center;
+  margin: 0;
+}
+nav a {
+  line-height: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #373f27;
+  border: 1px solid #cda34f;
+  color: #c0b3a0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #c0b3a0;
+  color: #af473c;
+}
+
+/* Nav display*/
+.App-nav {
+  display:list-item; 
+  padding: 2px;
+  font-size: 15px;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  width: 100%;
+  background-color: #c0b3a0;
+  color: #373f27;
+  border: 2px solid #cda34f;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 1px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+main {
+  background-color: #cda34f;
+  color: black;
+  border: 1px solid #373f27;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-top:20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+footer {
+  background-color: #403234;
+  color: white;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  font-weight: 10px;
+  margin: 1px;
+  padding: 8px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*  -----  Typography  ----- */
+p {
+  font-weight: bold;
+  
+}
+
+h1{
+  margin-top: -2px;
+}
+
+h2{
+  margin-top: -82px;
+  color: #373f27;
+}
+
+/*  ----- Table ----- */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 750px;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  background-color: #373f27;  
+  border:1px solid black;  
+  color:white;
+  font-weight:bold;
+  padding:1% 0;
+}
+
+thead {
+  font-size: 15px;
+}
+tbody {}
+tfoot {}
+
+tr {
+  background-color: #e9e7da;
+  padding: 1%;
+  text-align:center;
+}
+tr:nth-child(even) {
+  background-color: #636b46;
+}
+
+th {
+  border: 1px solid gray;
+  
+}
+td {
+  text-align: center;
+  border: 1px solid gray;
+  font-size: 15px;
+}
+tr:nth-child(odd) {}
+  td:nth-child(1) {}
+
+
+/*  ----- Form ----- */
+form {
+  border: 2px solid #1e3d59;
+  width: 550px;
+  padding: 2px;
+ 
+}
+fieldset {
+  border: 1px solid black;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+legend {
+  font-weight: bold;
+}
+label {}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
+  }
+  
+  input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    background-color: #f7f3f5;
+    width: 100%;
+  }
+
+  select{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    background-color: #f7f3f5;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+    input[text]
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+
+div .left {
+  display: flex;
+  margin-top: -170px;
+}
+
+.groceryimage{
+  border-radius: 50%;
+  opacity: 0.6;
+ 
+}
+
+.follow-msg{
+  position: fixed;
+  width: 80%;
+ 
+}
+.icons {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
